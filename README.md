@@ -65,7 +65,7 @@ A simple new feature integration framework.
 * A method is called
 
 #### CocoaPods:
-* Waiting for the integration
+* Installation with CocoaPods：pod 'CDDNewFeatures'
 
 
 #### Swift version:
