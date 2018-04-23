@@ -129,6 +129,7 @@
     #pragma mark - 设置跳过，立即体验的frame
     if (index == 2) {
         
+        dcNewVc.statusBarStyle = UIStatusBarStyleLightContent;
         [dcNewVc setUpFeatureControl:^(CGRect *skipBtnRect, CGRect *experienceBtnRect) {
             
             CGFloat dcY = (isFiPhoneX) ? 80: 60;

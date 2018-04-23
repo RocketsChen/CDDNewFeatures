@@ -29,6 +29,9 @@
 /* 跳过按钮 */
 @property (nonatomic, strong) UIButton *skipButton;
 
+/* 状态栏的颜色 （如果有要设置状态栏的颜色）*/
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
+
 /**
  自定义跳过/立即体验按钮Frame
 

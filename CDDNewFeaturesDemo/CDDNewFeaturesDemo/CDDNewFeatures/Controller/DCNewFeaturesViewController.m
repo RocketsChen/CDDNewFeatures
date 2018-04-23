@@ -91,6 +91,7 @@ static NSString *const DCNewFeaturesCellID = @"DCNewFeaturesCell";
     }
     return _skipButton;
 }
+
 - (UIPageControl *)pageControl
 {
     if (!_pageControl && _finShowImageArray.count != 0) {
@@ -106,6 +107,7 @@ static NSString *const DCNewFeaturesCellID = @"DCNewFeaturesCell";
     }
     return _pageControl;
 }
+
 #pragma mark - LifeCyle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -244,6 +246,11 @@ static NSString *const DCNewFeaturesCellID = @"DCNewFeaturesCell";
     !self.dismissBlock ? : self.dismissBlock();
 }
 
+#pragma mark - 设置颜色
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return (_statusBarStyle) ? _statusBarStyle : UIStatusBarStyleDefault;
+}
 
 
 @end
